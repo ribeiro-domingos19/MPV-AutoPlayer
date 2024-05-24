@@ -6,7 +6,7 @@ This script uses `mpv` to play a music file. If the user does not provide a path
 
 - `mpv` must be installed. The script will check if `mpv` is installed and will install it if necessary.
 
-! [Demo](demo.gif)
+![Demo](./demo.gif)
 ## Usage
 
 ```bash
