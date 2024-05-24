@@ -1,24 +1,15 @@
-# YouTube Downloader Script
+# Music Player Script
 
-This script allows you to download YouTube videos directly to your Termux environment. It utilizes `youtube-dl` to handle the downloading process and logs activities to help you track the script's operations.
+This script uses `mpv` to play a music file. If the user does not provide a path to a music file, a default music file will be played.
 
-## Features
+## Requirements
 
-- **Download YouTube Videos:** Quickly download videos from YouTube using a provided URL.
-- **Customizable Destination:** Videos are saved in a designated directory within your home directory.
-- **Logging:** Logs the activities and status of downloads to help with debugging and tracking.
+- `mpv` must be installed. The script will check if `mpv` is installed and will install it if necessary.
 
-## Prerequisites
+## Usage
 
-Ensure that you have the following installed in your Termux environment:
+```bash
+./music_player.sh [path_to_music_file]
 
-- Python
-- `youtube-dl`
-- `ffmpeg`
-
-You can install these dependencies by running:
-
-```sh
-pkg update && pkg upgrade
-pkg install python ffmpeg
-pip install youtube-dl
+#### Note
+- If you want to stop music just click `q` or `ctrl + c`
